@@ -1,0 +1,138 @@
+@import url('https://fonts.cdnfonts.com/css/rankings-caps');
+/* font-family: 'Rankings Caps', sans-serif;   */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand&family=Signika+Negative:wght@300&family=Underdog&display=swap');
+/* font-family: 'Bebas Neue', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@600&display=swap');
+/* font-family: 'Source Sans 3', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media screen and (min-width: 320px) {  
+    .header{
+        width: 100%;
+        height: 50px;
+        margin-top: 8px;
+        background: #f8feca;
+        background: linear-gradient(93deg,#f8feca86 0%, #c0bce280 49%, #f1a5d980 99%);
+        border-radius: 11% 89% 13% 87% / 100% 0% 100% 0% ;
+        position: fixed;
+        z-index: 1;
+        display: flex;
+        align-items: baseline;
+    }
+    .header-container{
+        height: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    .header .logo img{
+        width: auto;
+        height: 3rem;
+        margin-left: 30px;
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+    }
+    .menu ul{
+        display: flex;
+    }
+    .menu ul li{
+        list-style: none;
+        margin-left: 15px;
+    
+    }
+    .menu ul li a{
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: black;
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    .container-cover{
+        width: 100%;
+        height: 600px;
+    }
+    .cover{
+        width: auto;
+        height: 100%;
+        margin: auto;
+        background-image: url(/clase14/img/boji.jpg);
+        background-position: bottom;
+        display: flex;
+
+    }
+    .container-cover .cover .txt{
+        max-width: 300px;
+        position: relative;
+        left: 15px;
+        top: 70px;
+    }
+    .container-cover .cover .txt h2{
+        position: absolute;
+        font-size: 50px;
+        font-family: 'Rankings Caps', sans-serif;
+        color: #FFF;
+        text-shadow: 4px 3px 0px #7A7A7A;
+    }
+    .container-cover .cover .txt h1{ 
+        position: absolute;
+        top: 30px;
+        font-size: 70px;
+        margin-top: 20px;
+        font-family: 'Rankings Caps', sans-serif;
+        color: #FFF;
+        text-shadow: 4px 3px 0px #7A7A7A;
+    }
+    .container-cover .cover .txt p{
+        color: black;
+        text-shadow: 0px 1px 21px rgba(255,255,255,1);
+        position: absolute;
+        width: 180px;
+        height: 600px;
+        top: 250px;
+        font-size: 15px;
+        font-family: 'Source Sans 3', sans-serif;
+    }
+    .container-cover .txt a input{
+        border: none;
+        padding: 15px 30px;
+        font-size: 15px;
+        border-radius: 60px;
+        position: absolute;
+        top: 160px;
+        background: linear-gradient(93deg,#f1a5d9 0%, #c0bce2 49%, #f8feca 99%);
+    }
+    .gallery{
+        background: linear-gradient(93deg,#f1a5d9 0%, #c0bce2 49%, #f8feca 99%);
+        font-family: 'Bebas Neue', sans-serif;
+        width: 100%;
+        height: 100vh;
+    }
+    .gallery-tittle{
+        font-size: 2rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+  .gallery-conteiner{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+   .gallery-picture{
+        flex-grow: 1;
+        flex-basis: 10px;
+    }
+.gallery-img{
+        width: 50%;
+        object-fit: cover;
+        height: 50%;
+    }
+}
