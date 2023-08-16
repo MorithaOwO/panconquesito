@@ -15,7 +15,7 @@
         height: 50px;
         margin-top: 8px;
         background: #f8feca;
-        background: linear-gradient(93deg,#f8feca86 0%, #c0bce280 49%, #f1a5d980 99%);
+        background: linear-gradient(93deg,#f8fecace 0%, #c0bce2d2 49%, #f1a5d9d5 99%);
         border-radius: 11% 89% 13% 87% / 100% 0% 100% 0% ;
         position: fixed;
         z-index: 1;
@@ -35,12 +35,13 @@
     .header .logo img{
         width: auto;
         height: 3rem;
-        margin-left: 30px;
+        margin-left: 10px;
     }
     .menu{
         display: flex;
         align-items: center;
-        margin-right: 30px;
+        margin-top: -50px;
+        margin-left: 80px;
     }
     .menu ul{
         display: flex;
@@ -52,7 +53,7 @@
     }
     .menu ul li a{
         text-decoration: none;
-        font-size: 1.6rem;
+        font-size: 0.9rem;
         color: black;
         font-family: 'Bebas Neue', sans-serif;
     }
@@ -64,34 +65,39 @@
         width: auto;
         height: 100%;
         margin: auto;
-        background-image: url(/clase14/img/boji.jpg);
-        background-position: bottom;
+        background-image: url(/img/bg.jpg);
+        background-position: center;
         display: flex;
-
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: baseline;
     }
     .container-cover .cover .txt{
+        display: flex;
+        align-content: baseline;
         max-width: 300px;
-        position: relative;
         left: 15px;
         top: 70px;
     }
     .container-cover .cover .txt h2{
-        position: absolute;
-        font-size: 50px;
+        margin-top: 80px;
+        margin-left: 10px;
+        font-size: 3rem;
         font-family: 'Rankings Caps', sans-serif;
         color: #FFF;
         text-shadow: 4px 3px 0px #7A7A7A;
     }
     .container-cover .cover .txt h1{ 
-        position: absolute;
-        top: 30px;
-        font-size: 70px;
-        margin-top: 20px;
+        font-size: 4rem;
+        margin-top: 150px;
+        margin-left: -175px;
         font-family: 'Rankings Caps', sans-serif;
         color: #FFF;
         text-shadow: 4px 3px 0px #7A7A7A;
     }
     .container-cover .cover .txt p{
+        margin-left: 10px;
+        margin-top: 80px;
         color: black;
         text-shadow: 0px 1px 21px rgba(255,255,255,1);
         position: absolute;
@@ -102,6 +108,8 @@
         font-family: 'Source Sans 3', sans-serif;
     }
     .container-cover .txt a input{
+        margin-left: -280px;
+        margin-top: 80px;
         border: none;
         padding: 15px 30px;
         font-size: 15px;
@@ -121,18 +129,19 @@
         margin-top: 1rem;
         text-align: center;
     }
-  .gallery-conteiner{
+    .slider{
+        aspect-ratio: 10 / 18;
+        width: 100%;
+        position: relative;
         display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
+        overflow: scroll;
+        scroll-snap-type: x mandatory;
     }
-   .gallery-picture{
-        flex-grow: 1;
-        flex-basis: 10px;
-    }
-.gallery-img{
-        width: 50%;
+    .slider .gallery-picture{
+        width: 100%;
+        left: 0;
+        position: sticky;
         object-fit: cover;
-        height: 50%;
+        border-radius: 5px;
     }
 }
